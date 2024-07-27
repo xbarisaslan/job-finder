@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Navbar from "@/components/navbar/Navbar";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Lorem ipsum dolor sit amet.</p>
+    <main className="flex flex-col  min-h-screen">
+      <Navbar />
+      <Header />
+      <Footer />
     </main>
   );
 }
