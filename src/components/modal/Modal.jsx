@@ -3,14 +3,14 @@ const Modal = ({ isOpen, onClose, children }) => {
 
   return (
     <div
-      class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[100] text-center bg-white"
+      className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[100] text-center bg-white w-[90%] lg:w-[30%] lg:p-8 border-2 border-black"
       onClick={onClose}
     >
       <div
-        class="flex flex-col justify-center w-[40rem] h-[20rem] border-2 border-black"
+        className="flex flex-col justify-center h-[20rem] "
         onClick={(e) => e.stopPropagation()}
       >
-        <button class="absolute right-4 top-2" onClick={onClose}>
+        <button className="absolute right-4 top-2" onClick={onClose}>
           X
         </button>
         {children}
